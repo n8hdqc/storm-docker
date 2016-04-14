@@ -1,5 +1,5 @@
 FROM wurstmeister/base
-MAINTAINER Wurstmeister 
+MAINTAINER N8HDQC 
 
 #Install Java.
 RUN \

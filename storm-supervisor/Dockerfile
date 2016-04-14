@@ -1,5 +1,5 @@
-FROM n8hdqc/storm
-MAINTAINER Wurstmeister
+FROM n8hdqc/storm:0.10.0
+MAINTAINER N8HDCQ
 
 EXPOSE 6700
 EXPOSE 6701
