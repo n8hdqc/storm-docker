@@ -1,5 +1,5 @@
 FROM n8hdqc/storm
-MAINTAINER Wurstmeister
+MAINTAINER N8HDQC
 RUN /usr/bin/config-supervisord.sh ui
 
 EXPOSE 8080

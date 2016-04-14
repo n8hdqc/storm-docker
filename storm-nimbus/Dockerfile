@@ -1,4 +1,4 @@
-FROM n8hdqc/storm:0.10.0
+FROM n8hdqc/storm
 MAINTAINER Wurstmeister
 
 RUN /usr/bin/config-supervisord.sh nimbus 
