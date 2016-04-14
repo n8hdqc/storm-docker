@@ -1,5 +1,12 @@
-FROM wurstmeister/base
-MAINTAINER N8HDQC 
+FROM ubuntu:trusty
+MAINTAINER n8hdqc 
+
+RUN apt-get update; apt-get install -y unzip wget supervisor docker-engine openssh-server
+RUN echo 'root:n8hdqc' | chpasswd
+RUN mkdir /var/run/sshd
+RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+
+EXPOSE 22
 
 #Install Java.
 RUN \

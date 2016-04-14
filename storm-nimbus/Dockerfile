@@ -1,5 +1,5 @@
 FROM n8hdqc/storm:0.10.0
-MAINTAINER N8HDQC
+MAINTAINER n8hdqc
 
 RUN /usr/bin/config-supervisord.sh nimbus 
 RUN /usr/bin/config-supervisord.sh drpc
