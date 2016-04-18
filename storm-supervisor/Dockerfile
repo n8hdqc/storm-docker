@@ -1,5 +1,5 @@
 FROM n8hdqc/storm:0.10.0
-MAINTAINER n8hdqc
+MAINTAINER Nathan Haney
 
 EXPOSE 6700
 EXPOSE 6701

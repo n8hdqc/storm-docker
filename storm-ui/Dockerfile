@@ -1,5 +1,5 @@
 FROM n8hdqc/storm:0.10.0
-MAINTAINER n8hdqc
+MAINTAINER Nathan Haney
 RUN /usr/bin/config-supervisord.sh ui
 
 EXPOSE 8080

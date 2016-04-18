@@ -1,5 +1,5 @@
 FROM ubuntu:trusty
-MAINTAINER n8hdqc 
+MAINTAINER Nathan Haney 
 
 RUN apt-get update; apt-get install -y unzip wget supervisor openssh-server
 RUN echo 'root:n8hdqc' | chpasswd

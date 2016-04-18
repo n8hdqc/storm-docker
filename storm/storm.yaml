@@ -1,5 +1,6 @@
 storm.zookeeper.servers:
-    - "%zookeeper%"
+    - "%zookeeper_ip%"
+storm.zookeeper.port: "%zookeeper_port%"
 nimbus.host: "%nimbus%"
 drpc.servers:
   - "%nimbus%"
