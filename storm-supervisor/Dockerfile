@@ -5,6 +5,8 @@ EXPOSE 6700
 EXPOSE 6701
 EXPOSE 6702
 EXPOSE 6703
+EXPOSE 6704
+EXPOSE 6705
 EXPOSE 8000
 
 RUN /usr/bin/config-supervisord.sh supervisor
