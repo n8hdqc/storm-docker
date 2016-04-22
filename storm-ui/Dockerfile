@@ -1,4 +1,4 @@
-FROM n8hdqc/storm:0.10.0
+FROM n8hdqc/storm:1.0.0
 MAINTAINER Nathan Haney
 RUN /usr/bin/config-supervisord.sh ui
 

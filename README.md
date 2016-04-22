@@ -32,7 +32,7 @@ Add more supervisors:
 Take a look at docker-compose.yml:
 
     ui:
-      image: n8hdqc/storm-ui:0.10.0
+      image: n8hdqc/storm-ui:1.0.0
 	      ports:
 	        - "49080:8080"
 
