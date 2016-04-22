@@ -1,7 +1,7 @@
 storm.zookeeper.servers:
     - "%zookeeper_ip%"
 storm.zookeeper.port: %zookeeper_port%
-nimbus.host: "%nimbus%"
+nimbus.seeds: ["%nimbus%"]
 drpc.servers:
   - "%nimbus%"
 drpc.port: 3772
