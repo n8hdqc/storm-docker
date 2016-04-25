@@ -41,7 +41,7 @@ This tells Docker to expose the Docker UI container's port 8080 as port 49080 on
 If you are running docker natively you can use localhost. If you're using boot2docker, then do:
 
     $ boot2docker ip
-    The VM's Host only interface IP address is: 192.168.59.103
+    The VM's Host only interface IP address is: 192.168.99.100
 
 Which returns your docker VM's IP.<br/>
 So, to open storm UI, type the following in your browser:
@@ -50,7 +50,7 @@ So, to open storm UI, type the following in your browser:
 
 or
 
-    192.168.59.103:49080
+    192.168.99.100:49080
 
 in my case.
 
@@ -58,7 +58,7 @@ in my case.
 Since the nimbus host and port are not default, you need to specify where the nimbus host is, and what is the nimbus port number.<br/>
 Following the example above, after discovering the nimbus host IP (could be localhost, could be our docker VM ip as in the case of boot2docker), run the following command:
 
-    storm jar target/your-topology-fat-jar.jar com.your.package.AndTopology topology-name -c nimbus.host=192.168.59.103 -c nimbus.thrift.port=49627
+    storm jar target/your-topology-fat-jar.jar com.your.package.AndTopology topology-name -c nimbus.host=192.168.99.100 -c nimbus.thrift.port=49627
 
 ### How can I connect to one of the containers?
 Find the forwarded ssh port for the container you wish to connect to (use `docker-compose ps`)
